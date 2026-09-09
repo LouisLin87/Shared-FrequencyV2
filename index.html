@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="轉到彼此的頻率。8 題互動默契挑戰，送給你的朋友。無廣告，免註冊。">
+  <meta property="og:title" content="默契電台｜你們有多同頻？">
+  <meta property="og:description" content="8 題，轉到彼此的頻率。無廣告・免註冊・朋友默契挑戰。">
+  <meta name="theme-color" content="#161719">
+  <title>默契電台 — 轉到彼此的頻率</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%23d9fb72'/%3E%3Cpath d='M25 42v20m12-32v44m13-55v64m13-48v32m12-25v20' stroke='%23161719' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="shell">
+    <header><a class="brand" href="?" aria-label="默契電台首頁"><span class="brand-icon">≋</span><span>默契電台<small>TONGPIN RADIO</small></span></a><div class="header-actions"><button id="music" class="music-toggle" aria-pressed="false"><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="music-label">開啟音樂</span></button><button id="about" class="icon-button" aria-label="隱私與玩法">?</button></div></header>
+    <main id="app" tabindex="-1"></main>
+    <footer><span><i class="status-dot"></i> 無廣告・免註冊・只用暱稱</span><span class="footer-frequency">SOMEWHERE ON THE SAME FREQUENCY</span><button id="privacy">資料與隱私</button></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="info"><div class="dialog-top"><span class="eyebrow">BEFORE WE TUNE IN</span><button id="close-info" class="icon-button" aria-label="關閉">×</button></div><h2>安心，才會同頻。</h2><p>這是一個朋友之間的輕鬆遊戲，不是心理測驗。</p><ul><li>只填暱稱，不需要真名、電話、Email 或登入。</li><li>正式版會將出題答案、暱稱、分數與時間存入站主的私人 Google 試算表；朋友只能看到該頻道的暱稱、排名與分數。</li><li>頻道連結不是密碼；持有連結的人可以參加並查看排行榜。每個頻道 365 天後失效，伺服器會在下次使用時清除過期資料。</li><li>沒有廣告、分析追蹤碼或外部音樂檔。音樂由瀏覽器合成，只有你按下開關後才播放。</li><li>網站未自行收集 IP 或裝置識別碼；Google 等代管服務仍可能保留必要的服務紀錄。</li></ul><p class="subtle">請勿在暱稱或分享文字中填入個人資料。挑戰分數僅供娛樂，無法驗證參加者身分或阻止所有重複參加。</p><button id="clear-local" class="secondary wide">清除這台裝置的遊戲進度</button></dialog>
+  <script src="config.js"></script><script src="core.js"></script><script src="app.js"></script>
+</body>
+</html>
